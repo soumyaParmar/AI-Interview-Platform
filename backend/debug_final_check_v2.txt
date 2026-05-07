@@ -1,0 +1,4 @@
+﻿DEBUG: Session found: soumya
+DEBUG: Calling load_context_node...
+DEBUG: Context length: 3920
+ERROR during debug: 'charmap' codec can't encode character '\U0001f4cd' in position 710: character maps to <undefined>

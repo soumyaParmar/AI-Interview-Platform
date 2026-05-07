@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "setup-dev-env",
+            "type": "process",
+            "command": "${workspaceFolder}/venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/scripts/setup_dev.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

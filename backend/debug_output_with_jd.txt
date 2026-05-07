@@ -1,0 +1,7 @@
+﻿--- SESSION DATA (DB) ---
+Candidate: soumya
+JD Length: 1787
+Resume Length: 2709
+Extracted Skills: {'must_have_tech': ['Civil Engineering', 'Construction methods and materials', 'Project management'], 'nice_to_have_tech': ['Residential/commercial/infrastructure project experience', 'Familiarity with project management practices', 'Government or large-scale project experience'], 'soft_skills': ['Analytical and problem-solving abilities', 'Effective communication and teamwork skills', 'Good project management and coordination skills'], 'experience_level': 'Junior|Mid', 'silent_observer_suggestions': []}
+
+--- CONTEXT STATE (GRAPH) ---
