@@ -14,6 +14,7 @@ A stateful, AI-powered interview platform with a dual-agent architecture.
 - [Docker](https://www.docker.com/) (for PostgreSQL and Redis)
 - [Node.js](https://nodejs.org/) (v18+)
 - [Python](https://www.python.org/) (v3.10+)
+- [Ollama](https://ollama.com/) (for local LLM execution)
 
 ---
 
@@ -28,7 +29,16 @@ This will start:
 - **PostgreSQL**: `localhost:5431` (DB: `interview`, User: `postgres`)
 - **Redis**: `localhost:6379`
 
-### 2. Backend
+### 2. Local LLM Setup (Ollama)
+The platform uses **Llama 3** locally via Ollama.
+1. Download and install [Ollama](https://ollama.com/).
+2. Pull the required model:
+   ```bash
+   ollama pull llama3
+   ```
+3. Ensure Ollama is running in the background.
+
+### 3. Backend
 Navigate to the `backend` directory:
 ```bash
 cd backend
@@ -50,6 +60,11 @@ Create a `.env` file in the `backend` directory:
 ```env
 DATABASE_URL=postgresql://postgres:soumya@localhost:5431/interview
 REDIS_URL=redis://localhost:6379/0
+# Local LLM Configuration (Default: Ollama)
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=llama3
+# Optional: OpenAI or DeepSeek
+# OPENAI_API_KEY=your_key_here
 # DEEPSEEK_API_KEY=your_key_here
 ```
 
@@ -61,7 +76,7 @@ REDIS_URL=redis://localhost:6379/0
 
 ---
 
-### 3. Frontend
+### 4. Frontend
 Navigate to the `frontend` directory:
 ```bash
 cd frontend
